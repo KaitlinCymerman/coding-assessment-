@@ -1,0 +1,27 @@
+table {
+  border-collapse: collapse;
+}
+thead th {
+  color: #fff;
+  font-weight: bolder;
+  background-color: #191970;
+}
+th, td {
+  padding: 4px 10px 6px 10px;
+  color: black;
+}
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+tbody tr:hover {
+  outline: 2px dotted black;
+}
+tbody tr {
+  cursor: pointer;
+}
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+tbody tr:hover {
+  outline: 2px dotted black;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Users and Posts</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Users</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Username</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-id='1'>
+              <td>1</td>
+              <td>Leanne Graham</td>
+              <td>Bret</td>
+              <td>Sincere@april.biz</td>
+            </tr>
+            <tr data-id='2'>
+              <td>2</td>
+              <td>Ervin Howell</td>
+              <td>Antonette</td>
+              <td>Shanna@melissa.tv</td>
+            </tr>
+            <tr data-id='3'>
+              <td>3</td>
+              <td>Clementine Bauch</td>
+              <td>Samantha</td>
+              <td>Nathan@yesenia.net</td>
+            </tr>
+            <tr data-id='4'>
+              <td>4</td>
+              <td>Patricia Lebsack</td>
+              <td>Karianne</td>
+              <td>Julianne.OConner@kory.org</td>
+            </tr>
+            <tr data-id='5'>
+              <td>5</td>
+              <td>Chelsey Dietrich</td>
+              <td>Kamren</td>
+              <td>Lucio_Hettinger@annie.ca</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <article data-user-posts>
+          <table
+            data-users
+            data-request="https://jsonplaceholder.typicode.com/users"
+            data-display='{"id":"Id","name":"Name","username":"Username","email":"Email"}'
+            class="user-overview"
+          >
+            <h3>Select a user to view all posts</h3>
+          </table>
+          <div class="user-posts">
+            <h4>Posts:</h4>
+            <dl
+              data-posts
+              data-request="https://jsonplaceholder.typicode.com/users/:userId/posts"
+              data-placeholder=":userId" >
+            </dl>
+            <script src="index.js"></script>
+          </div>
+        <article>
+    </body>
+</html>
