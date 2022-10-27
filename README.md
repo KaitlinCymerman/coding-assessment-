@@ -2,4 +2,4 @@
 
  One-page web application that receives JSON data and renders the data into the DOM
  
- Live version: http://127.0.0.1:8000
+ Live version: http://127.0.0.1:5500/ksense/index.html
